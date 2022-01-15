@@ -25,6 +25,34 @@ button span{
 }
 
 /* --------------------------- --------------- --------------- --------------- 
+navigation menu styles
+--------------- --------------- --------------- --------------- */
+nav{
+    max-width: 85%;
+    margin: auto;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+ul li{
+    list-style-type: none;
+    margin: 0 15px;
+}
+li a{
+    text-decoration: none;
+    color: #3A3A3A;
+}
+li a i{
+    font-size: 24px;
+}
+/* --------------------------- --------------- --------------- --------------- 
 header section styles
 --------------- --------------- --------------- --------------- */
 header{
@@ -179,7 +207,7 @@ footer p{
 /* --------------------------- --------------- --------------- 
 product section styles
 --------------- --------------- */
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 820px) {
     .header-info, .contents{
         width: 100%;
         text-align: center;
