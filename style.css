@@ -90,7 +90,6 @@ logos section styles
 hr{
     height: 2px;
     border: none;
-    /* background-image: linear-gradient(to right, red , yellow); */
     background-image:  linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);;
 }
 .logos{  
@@ -205,8 +204,8 @@ footer p{
     margin: 0px 8px;
     color: white;
 }
+/* ---------animation----------- */
 header:hover .header-info>a>button {
-    /* background-color: rgba(240, 28, 222, 0.753); */
     box-shadow: 10px 10px 10px rgba(5, 5, 5, 0.8);
     padding: 10px;
     transform: translateX(30px) scale(1.5) rotate(360deg);
@@ -216,7 +215,7 @@ header:hover .header-info>a>button {
 media query
 --------------- --------------- */
 
-/* ------mobile viw------ */
+/* ------mobile viwe------ */
 
 @media only screen and (max-width: 667px) {
     .header-info, .contents{
@@ -247,7 +246,10 @@ media query
 
 /* ------tablet view --------- */
 @media only screen and (min-width: 667px) and (max-width: 1180px){
-.product-section{
+    nav{
+        display: none;
+    }
+    .product-section{
     max-width: 90%;
 }
 .products{
