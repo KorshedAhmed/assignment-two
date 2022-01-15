@@ -165,7 +165,7 @@ featured section styles
 --------------- --------------- --------------- --------------- */
 .featured-section{
     max-width: 85%;
-    margin: 0 auto;
+    margin:  auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,6 +188,7 @@ featured section styles
 footer section styles
 --------------- */
 footer{
+    width: 100%;
     color: white;
     background-color: #0A0826;
     text-align: center;
@@ -204,6 +205,13 @@ footer p{
     margin: 0px 8px;
     color: white;
 }
+header:hover .header-info>a>button {
+    /* background-color: rgba(240, 28, 222, 0.753); */
+    box-shadow: 10px 10px 10px rgba(5, 5, 5, 0.8);
+    padding: 10px;
+    transform: translateX(30px) scale(1.5) rotate(360deg);
+    transition: transform 3s ease-in, box-shadow 1s linear 3s;
+}
 /* --------------------------- --------------- --------------- 
 media query
 --------------- --------------- */
@@ -215,8 +223,12 @@ media query
         width: 100%;
         text-align: center;
     }
-    .top-section,.featured-section{
+    ul{
         flex-direction: column;
+    }
+    .top-section,.featured-section,.nav-bar{
+        flex-direction: column;
+        
     }
     .featured-section img,.top-section img{
         width: 100%;
@@ -224,17 +236,21 @@ media query
     .products{
         grid-template-columns: 1fr;
     }
+   
     .logos{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
-    .nav-bar{
-        display: none;
-    }
+
 }
 
 /* ------tablet view --------- */
 @media only screen and (min-width: 667px) and (max-width: 1180px){
-
+.product-section{
+    max-width: 90%;
+}
+.products{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
