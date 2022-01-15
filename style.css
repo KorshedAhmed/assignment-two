@@ -1,11 +1,11 @@
-/* ------------
+/* ------------------------ --------------- --------------- ---
 google fonts
---------------- */
+--------------- --------------- --------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-/* ------------
+/* --------------------------- --------------- --------------- 
 common styles
---------------- */
+------------------------------ --------------- ---------------  */
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
@@ -24,11 +24,11 @@ button span{
     margin-left: 8px;
 }
 
-/* ------------
+/* --------------------------- --------------- --------------- --------------- 
 header section styles
---------------- */
+--------------- --------------- --------------- --------------- */
 header{
-    max-width: 90%;
+    max-width: 85%;
     margin: auto;
 }
 
@@ -52,13 +52,12 @@ header{
 }
 
 
-/* ------------
+/*--------------- --------------- --------------- ---------------  ------------
 logos section styles
---------------- */
+--------------- --------------- --------------- --------------- */
 .company-logos{
     max-width: 85%;
-    margin: auto;
-    
+    margin: auto;   
 }
 hr{
     height: 2px;
@@ -74,9 +73,9 @@ hr{
 .logos img{
     margin: 0 30px;
 }
-/* ------------
+/* --------------------------- --------------- --------------- 
 product section styles
---------------- */
+--------------- --------------- --------------- --------------- */
 .product-section{
     position: relative;
     max-width: 80%;
@@ -133,12 +132,12 @@ product section styles
     background-color: white;
     color: #E02C6D;
 }
-/* ------------
-product section styles
---------------- */
+/* --------------------------- --------------- --------------- 
+featured section styles
+--------------- --------------- --------------- --------------- */
 .featured-section{
     max-width: 85%;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,7 +160,6 @@ product section styles
 footer section styles
 --------------- */
 footer{
-    /* height: 240px; */
     color: white;
     background-color: #0A0826;
     text-align: center;
@@ -177,4 +175,27 @@ footer p{
     font-size: 32px;
     margin: 0px 8px;
     color: white;
+}
+/* --------------------------- --------------- --------------- 
+product section styles
+--------------- --------------- */
+@media only screen and (max-width: 840px) {
+    .header-info, .contents{
+        width: 100%;
+        text-align: center;
+    }
+    .top-section,.featured-section{
+        flex-direction: column;
+    }
+    .featured-section img,.top-section img{
+        width: 100%;
+    }
+    .products{
+        grid-template-columns: 1fr;
+    }
+    .logos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
